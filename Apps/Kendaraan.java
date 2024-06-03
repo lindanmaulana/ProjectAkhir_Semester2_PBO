@@ -11,18 +11,8 @@ public class Kendaraan {
         this.jumlah = jumlah;
         this.harga = harga;
     }
-
-    public void Opening() {
-        System.out.println();
-        System.out.println("===============================================");
-        System.out.println("\t| SELAMAT DATANG TEMAN |");
-        System.out.println("| Pilihlah dengan bijak sesuai fashion anda |");
-        System.out.println("===============================================");
-        System.out.println();
-    }
-
-
-    public void Pesanan() {
+    
+    public void detailPesanan() {
         System.out.println();
         System.out.println("======================================");
         System.out.println("| PESANAN BERHASIL DENGAN DETAIL |");
@@ -35,9 +25,26 @@ public class Kendaraan {
         System.out.println();
     }
 
+    public void pembatalanPesanan() {
+        System.out.println("======================");
+        System.out.println("Pesanan Di batalkan!!!");
+        System.out.println("======================");
+    }
+
+    public void Opening() {
+        System.out.println();
+        System.out.println("===============================================");
+        System.out.println("\t| SELAMAT DATANG TEMAN |");
+        System.out.println("| Pilihlah dengan bijak sesuai fashion anda |");
+        System.out.println("===============================================");
+        System.out.println();
+    }
+
+
     public void Closing() {
         System.out.println();
         System.out.println("======================================================");
+        System.out.println("\t| TERIMAKASIH SUDAH MAMPIR DISINI |");
         System.out.println("| programming is so much more than just writing code |");
         System.out.println("\t| it is a reflection of you |");
         System.out.println("======================================================");

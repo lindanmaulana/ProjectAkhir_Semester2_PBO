@@ -2,8 +2,6 @@ package Apps;
 // import java.util.Scanner;
 import java.io.*;
 
-import Apps.*;
-
 public class AppsPemesanan extends Kendaraan {
     private int jumlahPesan;
 
@@ -73,12 +71,15 @@ public class AppsPemesanan extends Kendaraan {
 
                 }
 
-                System.out.print("Selesaikan Pemesanan ? (y/t)");
+                System.out.print("Selesaikan Pemesanan ? (y/n)");
                 String info = reader.readLine();
 
                 if(info.equals("y")) {
                     AppsPemesanan pesanan = new AppsPemesanan(menu.getJenisKendaraan(), classMotor.getMotor(), app.jumlahPesan, classMotor.getHarga());
-                    pesanan.Pesanan();
+                    
+                    pesanan.detailPesanan();
+                } else {
+                    app.pembatalanPesanan();
                 }
 
             } else if(pilihanJenis == 2) {
@@ -113,12 +114,15 @@ public class AppsPemesanan extends Kendaraan {
 
                 }
 
-                System.out.print("Selesaikan Pemesanan ? (y/t)");
+                System.out.print("Selesaikan Pemesanan ? (y/n)");
                 String info = reader.readLine();
 
                 if(info.equals("y")) {
                     AppsPemesanan pesanan = new AppsPemesanan(menu.getJenisKendaraan(), classMobilKeluarga.getMobilKeluarga(), app.jumlahPesan, classMobilKeluarga.getHarga());
-                pesanan.Pesanan();
+                    
+                    pesanan.detailPesanan();
+                } else {
+                    app.pembatalanPesanan();
                 }
 
             } else if(pilihanJenis == 3) {
@@ -153,12 +157,15 @@ public class AppsPemesanan extends Kendaraan {
 
                 }
 
-                System.out.print("Selesaikan Pemesanan ? (y/t)");
+                System.out.print("Selesaikan Pemesanan ? (y/n)");
                 String info = reader.readLine();
 
                 if(info.equals("y")) {
                     AppsPemesanan pesanan = new AppsPemesanan(menu.getJenisKendaraan(), classMobilBus.getmobilBus(), app.jumlahPesan, classMobilBus.getHarga());
-                    pesanan.Pesanan();
+                    
+                    pesanan.detailPesanan();
+                } else {
+                    app.pembatalanPesanan();
                 }
             }
 
